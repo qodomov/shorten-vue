@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer-logo{
+    filter: brightness(0) invert(1);
+}
+
+.advanced_card:nth-child(2) {
+    margin-top: 40px;
+    position: relative;
+}
+.advanced_card:last-child {
+    margin-top: 80px;
+}
+.advanced_card:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background: #2acfcf;
+}
+.advanced_card:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background: #2acfcf;
+}
